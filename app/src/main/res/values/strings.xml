@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Emergency Alert</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="adUnitId">ca-app-pub-1575509450873201/2372335253</string>
+    <string name="update">Update</string>
+    <string name="interstitialAdId">ca-app-pub-1575509450873201/1265824064</string>
+</resources>

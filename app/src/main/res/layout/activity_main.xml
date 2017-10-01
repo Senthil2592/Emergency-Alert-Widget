@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rsklabs.com.dangeralerts.MainActivity"
+    android:background="@drawable/gradient_main_activity">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:id="@+id/emergContNoValue"
+        android:layout_width="match_parent"
+        android:maxLength="10"
+        android:hint="Contact number 1"
+        android:inputType="number"
+        android:ellipsize="start"
+        android:paddingLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="#5c5c3d"
+        android:textColorHint="#5c5c3d"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:id="@+id/emergContNoValue2"
+        android:layout_width="match_parent"
+        android:maxLength="10"
+        android:hint="Contact number 2"
+        android:inputType="number"
+        android:ellipsize="start"
+        android:paddingLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="#5c5c3d"
+        android:textColorHint="#5c5c3d"
+        android:layout_below="@+id/emergContNoValue"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:id="@+id/emergContNoValue3"
+        android:layout_width="match_parent"
+        android:maxLength="10"
+        android:hint="Contact number 3"
+        android:inputType="number"
+        android:ellipsize="start"
+        android:paddingLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="#5c5c3d"
+        android:textColorHint="#5c5c3d"
+        android:layout_below="@+id/emergContNoValue2"/>
+
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:id="@+id/additionalMsgx"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/emergContNoValue3"
+        android:hint="Additional Message for SMS"
+        android:ellipsize="start"
+        android:paddingLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="#5c5c3d"
+        android:textColorHint="#5c5c3d"/>
+
+    <com.google.android.gms.ads.AdView android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adUnitId="@string/adUnitId"
+        ads:adSize="SMART_BANNER"
+        android:layout_above="@+id/next_level_button" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/wheels_icon_png_31819"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/adView1"
+        android:layout_toStartOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/if_61_171461"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp" />
+
+
+    <com.nhaarman.supertooltips.ToolTipRelativeLayout
+        android:id="@+id/activity_main_tooltipRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignLeft="@+id/imageView1"
+
+        />
+
+    <com.nhaarman.supertooltips.ToolTipRelativeLayout
+        android:id="@+id/activity_main_tooltipPreview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/imageView2"
+        />
+
+    <Button
+        android:id="@+id/next_level_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_boarder"
+        android:text="@string/update"
+        android:textStyle="bold"
+        android:textSize="16dp"/>
+
+</RelativeLayout>
